@@ -11,10 +11,10 @@ You can check the [plugins list](/openstack/bandit/tree/master/bandit/plugins) &
     -   id: python-bandit-vulnerability-check
 ```
 
-You can also specify directories to check, a custom `.banditrc` file or the alerting level:
+You can also specify a custom `.banditrc` file, directories to check, test IDs to skip or the alerting level:
 ```
     -   id: python-bandit-vulnerability-check
-        args: [--verbose, --ini, .banditrc, -ll, --recursive, src/lib]
+        args: [--verbose, --ini, .banditrc, -ll, --skip, "B321,B402", --recursive, src/lib]
 ```
 
 
@@ -25,7 +25,7 @@ You'll need to `pip install bandit` beforehand:
     hooks:
     -   id: python-bandit-vulnerability-check
         entry: bandit
-        args: [--verbose, -lll, --recursive, .]
+        args: [-lll, --recursive, .]
         language: system
         files: ''
 ```

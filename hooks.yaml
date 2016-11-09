@@ -3,5 +3,5 @@
     description: Python code vulnerabilities checker
     language: python
     entry: bandit
-    args: [--verbose, -lll, --recursive, .]
+    args: [-lll, --recursive, .]
     files: ''
