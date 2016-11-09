@@ -4,7 +4,7 @@ A pre-commit to find common security issues in your Python code using [bandit](/
 ## Usage
 ```
 -   repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
-    sha: v1.0.0
+    sha: v1.0.1
     hooks:
     -   id: python-bandit-vulnerability-check
 ```
