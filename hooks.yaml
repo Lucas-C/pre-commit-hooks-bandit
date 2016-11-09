@@ -1,0 +1,7 @@
+-   id: python-bandit-vulnerability-check
+    name: bandit
+    description: Python code vulnerabilities checker
+    language: python
+    entry: bandit
+    args: [--verbose, -lll, --recursive, .]
+    files: ''
