@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 import sys
 
-from pre_commit_hooks.bandit import main as bandit
+from pre_commit_hooks.bandit_analyzer import main as bandit
 
 
 def test_this_repo(tmpdir):
