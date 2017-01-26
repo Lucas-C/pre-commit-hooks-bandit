@@ -8,7 +8,7 @@ You can check the [plugins list](/openstack/bandit/tree/master/bandit/plugins) &
 ## Usage
 ```
 -   repo: https://github.com/Lucas-C/pre-commit-hooks-bandit
-    sha: v1.0.2
+    sha: v1.0.3
     hooks:
     -   id: python-bandit-vulnerability-check
 ```
