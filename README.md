@@ -1,6 +1,6 @@
 [![](https://travis-ci.org/Lucas-C/pre-commit-hooks-bandit.svg?branch=master)](https://travis-ci.org/Lucas-C/pre-commit-hooks-bandit)
 
-A pre-commit hook to find common security issues in your Python code using [bandit](//pypi.python.org/pypi/bandit).
+A [pre-commit](https://pre-commit.com) hook to find common security issues in your Python code using [bandit](//pypi.python.org/pypi/bandit).
 
 You can check the [plugins list](/openstack/bandit/tree/master/bandit/plugins) & [examples](/openstack/bandit/tree/master/examples) for tangible use cases.
 
