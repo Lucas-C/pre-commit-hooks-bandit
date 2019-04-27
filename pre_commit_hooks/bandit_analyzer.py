@@ -6,10 +6,9 @@ from bandit.cli.main import main as bandit_cli_main
 def main():
     try:
         bandit_cli_main()
+        return 0
     except SystemExit as error:
-        if error.code == 0:
-            return 0
-        return 1
+        return error.code
 
 
 if __name__ == '__main__':
