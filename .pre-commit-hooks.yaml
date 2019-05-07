@@ -2,6 +2,7 @@
     name: bandit
     description: Python code vulnerabilities checker
     language: python
+    types: [python]
     entry: bandit_analyzer
     args: [-lll, --recursive, .]
     files: ''
