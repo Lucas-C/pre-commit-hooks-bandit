@@ -2,7 +2,7 @@
 
 A [pre-commit](https://pre-commit.com) hook to find common security issues in your Python code using [bandit](//pypi.python.org/pypi/bandit).
 
-You can check the [plugins list](/openstack/bandit/tree/master/bandit/plugins) & [examples](/openstack/bandit/tree/master/examples) for tangible use cases.
+You can check the [plugins list](https://github.com/PyCQA/bandit/tree/master/bandit/plugins) & [examples](https://github.com/PyCQA/bandit/tree/master/examples) for tangible use cases.
 
 
 ## Usage
