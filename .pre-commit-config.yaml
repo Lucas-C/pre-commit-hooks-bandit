@@ -30,4 +30,4 @@ repos:
         name: py.test
         language: system
         entry: sh -c py.test
-        files: *.py
+        files: \.py$
