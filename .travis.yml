@@ -2,4 +2,4 @@ language: python
 python:
   - "3.6"
 install: pip install -U . -r dev-requirements.txt
-script: pre-commit run --all-files
+script: rm -f .coverage && pre-commit run --all-files
