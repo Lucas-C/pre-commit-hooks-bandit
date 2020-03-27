@@ -29,6 +29,11 @@ repos:
     -   id: python-bandit-vulnerability-check
 -   repo: local
     hooks:
+    -   id: py.test.tmp
+        name: py.test.tmp
+        language: system
+        entry: sh -c type -a py.test
+        files: ''
     -   id: py.test
         name: py.test
         language: system

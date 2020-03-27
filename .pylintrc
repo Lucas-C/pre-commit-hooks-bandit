@@ -1,8 +1,5 @@
 [MESSAGES CONTROL]
-disable = invalid-name, import-error, missing-docstring
+disable = invalid-name, import-error, missing-docstring, trailing-newlines
 
 [FORMAT]
 max-line-length = 120
-
-[MASTER]
-ignore-patterns=__init__.py
