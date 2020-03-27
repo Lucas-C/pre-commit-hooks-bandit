@@ -8,9 +8,6 @@ repos:
     rev: v2.5.0
     hooks:
     -   id: trailing-whitespace
-        files: ''
-        args:
-        - --no-markdown-linebreak-ext
     -   id: check-yaml
 -   repo: git://github.com/pre-commit/mirrors-pylint
     rev: v2.4.4
@@ -29,13 +26,8 @@ repos:
     -   id: python-bandit-vulnerability-check
 -   repo: local
     hooks:
-    -   id: py.test.tmp
-        name: py.test.tmp
-        language: system
-        entry: sh -c type -a py.test
-        files: ''
     -   id: py.test
         name: py.test
         language: system
         entry: sh -c py.test
-        files: ''
+        files: *.py
