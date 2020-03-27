@@ -3,4 +3,4 @@ python:
   - "3.7"
 install: pip install -U . -r dev-requirements.txt
 script:
-- find / -name '*coverage*'- rm -f .coverage && pre-commit run --all-files
+- ls -lh && ls -lh *- rm -f .coverage && pre-commit run --all-files
