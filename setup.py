@@ -5,7 +5,7 @@ setup(
     name='pre-commit-hooks-bandit',
     description='A pre-commit hook to find common security issues in your Python code',
     url='https://github.com/Lucas-C/pre-commit-hooks-bandit',
-    version='1.0.4',
+    version='1.0.5',
 
     author='Lucas Cimon',
     author_email='lucas.cimon@gmail.com',
