@@ -1,4 +1,4 @@
-[![](https://travis-ci.org/Lucas-C/pre-commit-hooks-bandit.svg?branch=master)](https://travis-ci.org/Lucas-C/pre-commit-hooks-bandit)
+[![build status](https://github.com/Lucas-C/pre-commit-hooks-bandit/workflows/build/badge.svg)](https://github.com/Lucas-C/pre-commit-hooks-bandit/actions?query=branch%3Amaster)
 
 A [pre-commit](https://pre-commit.com) hook to find common security issues in your Python code using [bandit](//pypi.python.org/pypi/bandit).
 
