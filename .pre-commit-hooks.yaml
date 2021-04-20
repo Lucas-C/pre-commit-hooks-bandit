@@ -6,3 +6,4 @@
     entry: bandit_analyzer
     args: [-lll, --recursive, .]
     files: ''
+    pass_filenames: false
