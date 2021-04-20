@@ -26,8 +26,9 @@ repos:
     -   id: python-bandit-vulnerability-check
 -   repo: local
     hooks:
-    -   id: py.test
-        name: py.test
+    -   id: pytest
+        name: pytest
         language: system
-        entry: sh -c py.test
+        entry: sh -c pytest
         files: \.py$
+        pass_filenames: false
