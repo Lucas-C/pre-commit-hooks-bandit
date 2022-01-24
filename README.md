@@ -45,4 +45,5 @@ You'll need to `pip install bandit` beforehand:
         args: [-lll, --recursive, .]
         language: system
         files: ''
+        name: bandit
 ```
