@@ -1,5 +1,4 @@
 name: CI
-
 on:  # cf. https://github.community/t/how-to-trigger-an-action-on-push-or-pull-request-but-not-both/16662
   push:
     branches:
@@ -7,7 +6,6 @@ on:  # cf. https://github.community/t/how-to-trigger-an-action-on-push-or-pull-r
   pull_request:
     branches:
     - master
-
 jobs:
   check:
     name: Run check
@@ -16,16 +14,13 @@ jobs:
       max-parallel: 5
       matrix:
         python-version: [3.6, 3.7, 3.8, 3.9]
-
     steps:
       - name: Checkout code 🛎️
         uses: actions/checkout@v2
-
       - name: Set up Python ${{ matrix.python-version }} 🔧
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-
       - name: Cache pip 🏗️
         uses: actions/cache@v2
         with:
@@ -36,12 +31,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-python-${{ matrix.python-version }}-pip-${{ hashFiles('requirements.txt') }}
             ${{ runner.os }}-python-${{ matrix.python-version }}-
-
       - name: Install ⚙️
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install -U -r dev-requirements.txt
-          pip install -U .
-
+          pip install --upgrade . -r dev-requirements.txt
       - name: Running checks ☑
         run:  pre-commit run --all-files --verbose

@@ -5,5 +5,5 @@
     types: [python]
     entry: bandit_analyzer
     args: [-lll, --recursive, .]
-    files: ''
+    always_run: true
     pass_filenames: false
