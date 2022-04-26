@@ -1,3 +1,9 @@
+![](https://svg-banners.vercel.app/api?type=origin&text1=Deprecated&text2=Use%20the%20official%20PyCQA%2Fbandit%20hook%20instead&width=800&height=200)
+
+**This hook only exists for historical reasons.
+It offers no benefits over the official bandir `pre-commit` hook,
+that you should use instead: [PyCQA/bandit/.pre-commit-hooks.yaml](https://github.com/PyCQA/bandit/blob/main/.pre-commit-hooks.yaml)**
+
 [![build status](https://github.com/Lucas-C/pre-commit-hooks-bandit/workflows/CI/badge.svg)](https://github.com/Lucas-C/pre-commit-hooks-bandit/actions?query=branch%3Amaster)
 
 A [pre-commit](https://pre-commit.com) hook to find common security issues in your Python code using [bandit](//pypi.python.org/pypi/bandit).
